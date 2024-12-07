@@ -1,0 +1,49 @@
+window {
+    font-family: JetBrains Mono;
+    background-color: rgba(24, 27, 32, 0.2);
+    background-image: image(url("./noise.png"))
+} 
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    animation: gradient_f 20s ease-in infinite;
+    transition: all 0.3s ease-in;
+    box-shadow: 0 0 10px 2px transparent;
+    margin: 10px;
+    outline: none;
+    border: 0;
+    color: #f7f7f7;
+}
+
+button:focus {
+    box-shadow: none;
+    background-size : 20%;
+}
+
+button:hover {
+    background-size: 25%;
+    color: #f7f7f7;
+    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682);
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+#logout {
+    background-image: image(url("./icons/logout.png"));
+
+}
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+}
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+#suspend {
+ background-image: image(url("./icons/suspend.png"));
+}
